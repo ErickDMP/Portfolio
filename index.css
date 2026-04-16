@@ -1,49 +1,44 @@
-/* Centering all text and organizing styles */
 body {
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 10px 0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
 }
 
 nav {
-    margin: 1rem 0;
+  background-color: #333;
+  padding: 10px;
 }
 
-nav a {
-    margin: 0 1rem;
-    color: #fff;
-    text-decoration: none;
-    transition: transform 0.3s ease;
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
 }
 
-nav a:hover {
-    transform: scale(1.3);
+.menu li {
+  margin: 0 15px;
 }
 
-section {
-    padding: 2rem;
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-section ul {
-    display: inline-block;
-    text-align: left;
+.menu a:hover {
+  color: #00bcd4;
 }
 
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    width: 100%;
-    bottom: 0;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
