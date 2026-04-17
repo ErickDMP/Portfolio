@@ -45,5 +45,32 @@ nav {
   text-align: center;
 }
 img{
-  width: 500px;
+  width: 250px;
 }
+#paisaje{
+  width: 100%;
+}
+#inicio{
+text-align: center;
+}
+#sobre_mi{
+text-align: center;
+}
+#proyecto{
+text-align: center;
+}
+#habilidades{
+text-align: center;
+}
+#contacto{
+text-align: center;
+}
+ul{
+  list-style: none;
+}
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
+        nav { margin: 1rem 0; }
+        nav a { margin: 0 1rem; color: #fff; text-decoration: none; }
+        section { padding: 2rem; }
+        footer { background: #333; color: #fff; text-align: center; position: relative; width: 100%; bottom: 0; }
