@@ -5,7 +5,8 @@ body {
 }
 
 nav {
-  background-color: #333;
+  background-image: url(Paisaje.jpeg);
+  background-size: cover;
   padding: 10px;
 }
 
