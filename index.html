@@ -1,92 +1,98 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erick Morales | Portfolio</title>
 
+  <link rel="stylesheet" href="index.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div id="fondo">
 
-    </div>
-    <header>
-        <h1>ERICK DANIEL MORALES PAREDES</h1>
-        <nav>
-            <ol class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="sobre-mi.html">Sobre mí</a></li>
-                <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="habilidades.html">Habilidades</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ol>
-        </nav>
-    </header>
-    <div class="container">
-        <section id="inicio">
-            <h2>Inicio</h2>
-            <div class="card">
-                <p>Este es mi porfolio, demustro mis habilidades, proyectos y cual es la trayectoria profesional que me
-                    encantaria seguir.</p>
-            </div>
-        </section>
-    </div>
-    <section id="sobre_mi">
-        <div class="container">
-            <h2>Sobre mi</h2>
-            <div class="card">
-                <p>Naci en Ecuador en el 1999 a los 10 años empece a cambiar la room de mi telefono, por curiosidad, a
-                    los 12 desarme y arme mi propio ordenador realizando una limpieza a profundidad, en el 2018 viaje a
-                    rusia vivi durante 1 año en kursk, en el 2019 viaje a Londres donde viví 6 años con mi madre y
-                    aprendí ingles, actualmente llevo 4 años en españa trabajando en una consultora como teleoperador de
-                    fidelización</p>
-            </div>
-    </section>
-    </div>
-    <section id="proyecto">
-        <div class="container">
-            <h2>Proyecto</h2>
-            <div class="card">
-                <p>Here are some of the projects I've worked on:</p>
-                <ul>
-                    <li>Mi pagina web: Esta es mi pagina web </li> <a
-                        href="https://erickdmp.github.io/">https://erickdmp.github.io/</a>
-                </ul>
-            </div>
-        </div>
-    </section>
-    <div class="container">
-        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <div class="card">
-                <p>Mis habilidades van desde creación de paginas web con repositorios en github, hacer push en local
-                    para guardar los cambios en el repositorio, creacion y distribucion de redes</p>
-                <ul>
-                    <li>HTML/CSS</li>
-                    <li>JavaScript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                </ul>
-            </div>
-        </section>
-    </div>
-    <div class="container">
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <div class="card">
-                <p>If you would like to get in touch, feel free to reach out!</p>
-            </div>
-        </section>
-    </div>
-    <footer>
-        <p>&copy; 2026 Erick DMP</p>
-    </footer>
+<nav>
+  <ul class="menu">
+    <li><a href="#inicio">Inicio</a></li>
+    <li><a href="#sobre">Sobre mí</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#skills">Habilidades</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+</nav>
+<section id="inicio">
+  <h1>Erick Morales</h1>
+  <p>Administrador de Sistemas | ASIR</p>
+  <a href="#contacto" class="btn">Contáctame</a>
+</section>
+
+<section id="sobre">
+  <h2>Sobre mí</h2>
+  <div class="card">
+    <p>
+      Soy estudiante de ASIR con experiencia en atención al cliente y pasión por la tecnología.
+      He vivido en Ecuador, Rusia, Reino Unido y España, lo que me ha permitido adaptarme a diferentes entornos.
+    </p>
+
+    <img src="Erick.jpeg" alt="Erick" style="width:200px; border-radius:50%; margin-top:15px;">
+  </div>
+</section>
+
+<section id="proyectos">
+  <h2>Proyectos</h2>
+
+  <div class="card">
+    <h3>Portfolio Web</h3>
+    <p>Mi propia página web desarrollada con HTML y CSS.</p>
+    <a href="https://erickdmp.github.io/" class="btn">Ver proyecto</a>
+  </div>
+
+</section>
+
+<section id="skills">
+  <h2>Habilidades</h2>
+
+  <div class="skill">
+    <p>Linux</p>
+    <div class="skill-bar"><span style="width:80%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>MySQL</p>
+    <div class="skill-bar"><span style="width:70%"></span></div>
+  </div>
+
+  <div class="skill">
+    <p>Redes (Cisco)</p>
+    <div class="skill-bar"><span style="width:75%"></span></div>
+  </div>
+
+</section>
+
+<section>
+  <h2>Fotografía</h2>
+
+  <div class="card">
+    <img src="Paisaje.jpeg" style="width:100%; border-radius:10px;">
+    <img src="Arbol.jpeg" style="width:100%; border-radius:10px; margin-top:10px;">
+    <img src="Erick_Sombra.jpeg" style="width:100%; border-radius:10px; margin-top:10px;">
+  </div>
+</section>
+
+<section id="contacto">
+  <h2>Contacto</h2>
+
+  <div class="card">
+    <p>Email: erickdanielmoralesparedes@outlook.com</p>
+    <p>Teléfono: 645416698</p>
+    <a href="https://www.linkedin.com/" class="btn">LinkedIn</a>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Erick Morales</p>
+</footer>
+
 </body>
-
 </html>
