@@ -1,87 +1,130 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background-color: #f4f4f4;
-    font-family: "Fira Code", monospace;
-  font-optical-sizing: auto;
+:root {
+  --color-bg: #0f172a;
+  --color-card: #1e293b;
+  --color-primary: #38bdf8;
+  --color-text: #e2e8f0;
+  --color-muted: #94a3b8;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: "Fira Code", monospace;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
 
 nav {
-  
- background-image: url("Paisaje.jpeg");
- background-color: #cccccc;
- padding: 10px;
-
+  position: sticky;
+  top: 0;
+  background: rgba(15, 23, 42, 0.9);
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  z-index: 100;
 }
 
 .menu {
   display: flex;
   justify-content: center;
   list-style: none;
-  padding: 0;
-}
-
-.menu li {
-  margin: 0 15px;
+  gap: 20px;
 }
 
 .menu a {
-  color: white;
+  color: var(--color-text);
   text-decoration: none;
-  font-weight: bold;
+  transition: 0.3s;
 }
 
 .menu a:hover {
-  color: #00bcd4;
+  color: var(--color-primary);
 }
 
-.container {
-  padding: 40px;
+
+#inicio {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("Paisaje.jpeg") center/cover;
   text-align: center;
 }
+
+#inicio h1 {
+  font-size: 3rem;
+}
+
+#inicio p {
+  color: var(--color-muted);
+}
+
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
 
 .card {
-  background: white;
+  background: var(--color-card);
   padding: 20px;
-  margin: 20px auto;
-  width: 60%;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  margin: 20px 0;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--color-primary);
+  color: black;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+.skill {
+  margin: 10px 0;
+}
+
+.skill-bar {
+  height: 10px;
+  background: #334155;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar span {
+  display: block;
+  height: 100%;
+  background: var(--color-primary);
+}
+
+footer {
   text-align: center;
+  padding: 20px;
+  color: var(--color-muted);
 }
-img{
-  width: 250px;
-}
-#paisaje{
-  width: 100%;
-}
-#inicio{
-text-align: center;
-}
-#sobre_mi{
-text-align: center;
-}
-#proyecto{
-text-align: center;
-}
-#habilidades{
-text-align: center;
-}
-#contacto{
-text-align: center;
-}
-ul{
-  list-style: none;
-}
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
-        nav { margin: 1rem 0; }
-        nav a { margin: 0 1rem; color: #fff; text-decoration: none; }
-        section { padding: 2rem; }
-        footer { background: #333; color: #fff; text-align: center; position: relative; width: 100%; bottom: 0; }
-#fondo{
-  display: flex;
-  width: 100%;
-  background-image: url("Paisaje.jpeg");
+
+@media (max-width: 768px) {
+  #inicio h1 {
+    font-size: 2rem;
+  }
 }
